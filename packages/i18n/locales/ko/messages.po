@@ -142,6 +142,11 @@ msgstr "{0} 남음"
 msgid "{0} MB"
 msgstr "{0} MB"
 
+#. placeholder {0}: recurrence.count
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "{0} occurrences"
+msgstr ""
+
 #. placeholder {0}: sender.name
 #: apps/web/src/pages/settings/ExternalConversationSettings.tsx
 msgid "{0} rollup hours"
@@ -253,6 +258,14 @@ msgstr "{commandVariable}은(는) 예약되어 있어 명령 변수로 사용할
 msgid "{connectedCount, plural, one {# connected} other {# connected}}"
 msgstr "{connectedCount, plural, other {#개 연결됨}}"
 
+#: apps/web/src/pages/model-settings/space-bots-model.tsx
+msgid "{count, plural, one {{names} keeps its own model} other {{names} keep their own model}}"
+msgstr ""
+
+#: apps/mobile/components/settings/space-bots-model.tsx
+msgid "{count, plural, one {# bot has its own model: {names}} other {# bots have their own model: {names}}}"
+msgstr ""
+
 #: apps/mobile/components/thread/peer-receipt-line.tsx
 #: apps/web/src/pages/shell/chat/message-view.tsx
 msgid "{count, plural, one {# message with {peer}} other {# messages with {peer}}}"
@@ -266,17 +279,17 @@ msgstr "{count, plural, one {# 행} other {# 행}}"
 msgid "{count, plural, one {# selected} other {# selected}}"
 msgstr "{count, plural, other {#개 선택됨}}"
 
+#: apps/mobile/app/(settings)/skills.tsx
+msgid "{count, plural, one {# skill} other {# skills}}"
+msgstr ""
+
+#: apps/mobile/components/settings/space-bots-model.tsx
+msgid "{count, plural, one {Switch # bot to the space default?} other {Switch # bots to the space default?}}"
+msgstr ""
+
 #: apps/mobile/components/thread/thread-list-controls.tsx
 msgid "{count} agents working"
 msgstr "에이전트 {count}개 작업 중"
-
-#: apps/mobile/components/settings/space-bots-model.tsx
-msgid "{count} bots have their own model:"
-msgstr "자체 모델을 쓰는 봇 {count}개:"
-
-#: apps/mobile/components/settings/space-bots-model.tsx
-msgid "{count} bots now use the space default."
-msgstr "이제 봇 {count}개가 스페이스 기본값을 사용합니다."
 
 #: apps/mobile/app/(settings)/integrations.tsx
 msgid "{count} connectors"
@@ -312,10 +325,6 @@ msgstr "{count}개 확인 필요"
 #: apps/mobile/app/bot-profile.tsx
 msgid "{count} on"
 msgstr "{count}개 켜짐"
-
-#: apps/mobile/app/(settings)/skills.tsx
-msgid "{count} skills"
-msgstr "스킬 {count}개"
 
 #: apps/mobile/components/settings/space-availability.tsx
 msgid "{count} spaces"
@@ -399,6 +408,14 @@ msgstr "{hidden, plural, other {+이전 단계 #개}}"
 msgid "{hiddenSelectedCount, plural, one {# selected model is hidden by your search.} other {# selected models are hidden by your search.}}"
 msgstr "{hiddenSelectedCount, plural, other {선택한 모델 #개가 검색 결과에서 숨겨져 있습니다.}}"
 
+#: packages/i18n/src/computer-usage.ts
+msgid "{hours} bot computer hours/month"
+msgstr ""
+
+#: packages/i18n/src/computer-usage.ts
+msgid "{hours} bot computer hours/month at Standard size · Up to {size}"
+msgstr ""
+
 #: apps/web/src/lib/locale/relative-time.ts
 msgid "{hours}h ago"
 msgstr "{hours}시간 전"
@@ -429,9 +446,18 @@ msgstr "RAM {memoryGb} GB와 {0}의 {usage}배 컴퓨터 시간. 시간은 봇�
 msgid "{minutes}m ago"
 msgstr "{minutes}분 전"
 
+#: apps/mobile/components/settings/space-bots-model.tsx
+msgid "{moved, plural, one {# bot now uses the space default.} other {# bots now use the space default.}}"
+msgstr ""
+
 #: apps/mobile/lib/routines/cron.ts
 msgid "{n} {unit}"
 msgstr "{n} {unit}"
+
+#: apps/mobile/app/routine.tsx
+#: apps/web/src/pages/shell/use-routine-editor.ts
+msgid "{name} (copy)"
+msgstr ""
 
 #: apps/mobile/lib/thread/send/thread-attachments.ts
 msgid "{name} (could not read)"
@@ -515,14 +541,6 @@ msgstr "{name}, 켜짐"
 #: apps/mobile/lib/computers/computer.ts
 msgid "{name}’s computer"
 msgstr "{name}의 컴퓨터"
-
-#: apps/web/src/pages/model-settings/space-bots-model.tsx
-msgid "{names} keep their own model"
-msgstr "{names}은(는) 자체 모델을 유지합니다"
-
-#: apps/web/src/pages/model-settings/space-bots-model.tsx
-msgid "{names} keeps its own model"
-msgstr "{names}은(는) 자체 모델을 유지합니다"
 
 #: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
 msgid "{owner}'s {peer} wants to connect to {agent}"
@@ -877,14 +895,6 @@ msgstr "**목요일**\n"
 msgid "/ month"
 msgstr "/ 월"
 
-#: apps/mobile/components/settings/space-bots-model.tsx
-msgid "1 bot has its own model:"
-msgstr "자체 모델을 쓰는 봇 1개:"
-
-#: apps/mobile/components/settings/space-bots-model.tsx
-msgid "1 bot now uses the space default."
-msgstr "이제 봇 1개가 스페이스 기본값을 사용합니다."
-
 #: apps/mobile/app/(settings)/integrations.tsx
 msgid "1 connector"
 msgstr "커넥터 1개"
@@ -898,10 +908,6 @@ msgstr "무료 1개월 획득"
 #: apps/web/src/pages/shell/chat/bot-context-menu.tsx
 msgid "1 hour"
 msgstr "1시간"
-
-#: apps/mobile/app/(settings)/skills.tsx
-msgid "1 skill"
-msgstr "스킬 1개"
 
 #: apps/web/src/components/integrations/space-availability.tsx
 msgid "1 space"
@@ -1078,6 +1084,7 @@ msgstr "활동 로그"
 #: apps/mobile/app/(settings)/integrations.tsx
 #: apps/mobile/app/(settings)/plugin.tsx
 #: apps/mobile/components/thread/ask-block.tsx
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
 #: apps/web/src/components/integrations/plugin-marketplace.tsx
 #: apps/web/src/components/messages/SecretAskCard.tsx
 #: apps/web/src/pages/integrations/McpServerForm.tsx
@@ -1092,7 +1099,12 @@ msgstr "추가"
 msgid "Add {0} to the group"
 msgstr "그룹에 {0} 추가"
 
+#: apps/web/src/pages/plugins/parts.tsx
+msgid "Add {label}"
+msgstr ""
+
 #: apps/mobile/app/(settings)/integrations.tsx
+#: apps/web/src/components/integrations/plugin-marketplace.tsx
 msgid "Add {name}"
 msgstr "{name} 추가"
 
@@ -1167,6 +1179,10 @@ msgstr "하나 더 추가"
 msgid "Add another {name}"
 msgstr "{name} 하나 더 추가"
 
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "Add calendar event?"
+msgstr ""
+
 #: apps/mobile/app/(settings)/billing.tsx
 #: apps/web/src/components/billing/ModelCredits.tsx
 msgid "Add credits"
@@ -1233,6 +1249,10 @@ msgstr "패스키 추가"
 #: apps/web/src/pages/model-settings/providers-section.tsx
 msgid "Add provider"
 msgstr "서비스 추가"
+
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "Add reminder?"
+msgstr ""
 
 #: apps/mobile/app/(settings)/_layout.tsx
 #: apps/mobile/app/(settings)/approvals.tsx
@@ -1377,6 +1397,10 @@ msgstr "{price} 전액이 모델 사용에 쓰입니다."
 msgid "All bots"
 msgstr "모든 봇"
 
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "All day"
+msgstr ""
+
 #: apps/mobile/app/artifacts.tsx
 #: apps/web/src/pages/space/Artifacts.tsx
 msgid "All files"
@@ -1406,6 +1430,7 @@ msgid "Allow"
 msgstr "허용"
 
 #: apps/mobile/app/(settings)/messaging.tsx
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
 #: apps/mobile/lib/settings/ai-consent.ts
 #: apps/web/src/components/call/VoiceConsentDialog.tsx
 #: apps/web/src/components/settings/ApprovalRulesSettings.tsx
@@ -2003,6 +2028,7 @@ msgstr "차단됨"
 #: apps/mobile/app/(settings)/account.tsx
 #: apps/mobile/app/(settings)/labs.tsx
 #: apps/web/src/pages/settings/LabsSettingsPanel.tsx
+#: apps/web/src/pages/shell/app-rail.tsx
 #: apps/web/src/pages/shell/sidebar/sidebar-footer.tsx
 #: apps/web/src/pages/space/Board.tsx
 msgid "Board"
@@ -2038,6 +2064,7 @@ msgstr "Bot"
 #: apps/web/src/pages/Shell.tsx
 #: apps/web/src/pages/shell/bots/avatar-studio-popover.tsx
 #: apps/web/src/pages/shell/chat/message-view.tsx
+#: apps/web/src/pages/shell/chat/transcript.tsx
 #: apps/web/src/pages/space/SpaceSearch.tsx
 msgid "Bot"
 msgstr "봇"
@@ -2287,6 +2314,7 @@ msgstr "이미지를 읽을 수 없음"
 #: apps/mobile/lib/cards/ask-action-label.ts
 #: apps/mobile/lib/inbox/sections/confirm-delete-section.ts
 #: apps/mobile/lib/inbox/use-inbox-chat-actions.ts
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
 #: apps/mobile/lib/thread/send/unsent-send-warning.ts
 #: apps/mobile/lib/thread/thread-voice.ts
 #: apps/web/src/components/account/PasskeySettings.tsx
@@ -2469,6 +2497,7 @@ msgstr "ChatGPT 구독"
 
 #: apps/mobile/lib/bots/identity-display.ts
 #: apps/web/src/lib/bots/identity-display.ts
+#: apps/web/src/pages/shell/app-rail.tsx
 msgid "Chats"
 msgstr "채팅"
 
@@ -2834,9 +2863,14 @@ msgid "Compact"
 msgstr "좁게"
 
 #: apps/mobile/components/bots/bot-context-cards.tsx
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
 #: apps/web/src/pages/space/ScratchpadSection.tsx
 msgid "Complete"
 msgstr "완료"
+
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "Complete reminder?"
+msgstr ""
 
 #: apps/mobile/components/thread/special-message-card.tsx
 #: apps/web/src/components/messages/SubagentCard.tsx
@@ -5639,6 +5673,10 @@ msgid "Extra high"
 msgstr "매우 높음"
 
 #: packages/i18n/src/computer-usage.ts
+msgid "Extra large"
+msgstr ""
+
+#: packages/i18n/src/computer-usage.ts
 msgid "Extra large (uses {rate}× hours)"
 msgstr "특대 ({rate}배 시간 사용)"
 
@@ -6080,10 +6118,13 @@ msgstr "키보드 숨기기"
 msgid "Hide password"
 msgstr "비밀번호 숨기기"
 
-#: apps/mobile/components/calls/VoiceChatCard.tsx
 #: apps/web/src/components/call/VoiceChatCard.tsx
 msgid "Hide transcript"
 msgstr "대화 기록 숨기기"
+
+#: apps/mobile/components/calls/VoiceChatCard.tsx
+msgid "Hide transcript: {title}, {duration}"
+msgstr ""
 
 #: apps/mobile/lib/models/thinking-level.ts
 #: apps/web/src/components/models/ProviderSettingsForm.tsx
@@ -6566,6 +6607,10 @@ msgid "Language"
 msgstr "언어"
 
 #: packages/i18n/src/computer-usage.ts
+msgid "Large"
+msgstr ""
+
+#: packages/i18n/src/computer-usage.ts
 msgid "Large (uses {rate}× hours)"
 msgstr "대 ({rate}배 시간 사용)"
 
@@ -6577,15 +6622,13 @@ msgstr "긴 텍스트 붙여넣기"
 msgid "Large text pasted inline"
 msgstr "긴 텍스트를 본문에 붙여넣었습니다"
 
-#. placeholder {0}: new Date(state.checkedAt).toLocaleString()
 #: apps/web/src/pages/routines/routine-editor/trigger-cards.tsx
-msgid "Last check {0}: changed"
-msgstr "마지막 확인 {0}: 변경됨"
+msgid "Last check {checkedAt}: changed"
+msgstr ""
 
-#. placeholder {0}: new Date(state.checkedAt).toLocaleString()
 #: apps/web/src/pages/routines/routine-editor/trigger-cards.tsx
-msgid "Last check {0}: no changes"
-msgstr "마지막 확인 {0}: 변경 없음"
+msgid "Last check {checkedAt}: no changes"
+msgstr ""
 
 #: apps/web/src/components/account/SocialSignInButtons.tsx
 msgid "Last used"
@@ -6873,6 +6916,11 @@ msgstr "봇이 만든 파일"
 msgid "Main model"
 msgstr "기본 모델"
 
+#: apps/mobile/app/routine.tsx
+#: apps/web/src/pages/routines/RoutineEditor.tsx
+msgid "Make a copy"
+msgstr ""
+
 #: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/web/src/components/spaces/OrganizationMembersSettings.tsx
 msgid "Make admin"
@@ -7149,6 +7197,11 @@ msgstr "메시지를 입력하세요"
 msgid "Messaged {peer}"
 msgstr "{peer}에게 메시지 보냄"
 
+#: apps/mobile/lib/thread/send/thread-send.ts
+#: apps/web/src/pages/shell/composer/use-composer-actions.ts
+msgid "Messages can be up to {limit} characters."
+msgstr ""
+
 #: apps/mobile/lib/settings/ai-consent.ts
 msgid "Messages, chat history, bot instructions, memories, attachments, screenshots and connected-app content are sent to run your bots, including routines."
 msgstr "자동 실행을 포함해 봇을 실행하기 위해 메시지, 채팅 기록, 봇 지침, 기억, 첨부 파일, 스크린샷, 연결된 앱의 콘텐츠가 전송됩니다."
@@ -7222,6 +7275,7 @@ msgstr "모드"
 #: apps/web/src/pages/settings/UsageSettingsPanel.tsx
 #: apps/web/src/pages/shell/bots/agent-import-plan.tsx
 #: apps/web/src/pages/shell/chat/chat-model-picker.tsx
+#: apps/web/src/pages/shell/composer/composer-model-picker.tsx
 msgid "Model"
 msgstr "모델"
 
@@ -7623,6 +7677,10 @@ msgstr "다음 실행"
 msgid "Next settings sections"
 msgstr "다음 설정 섹션"
 
+#: apps/web/src/pages/shell/keyboard-shortcuts-dialog.tsx
+msgid "Next thinking level"
+msgstr ""
+
 #: apps/mobile/lib/inbox/inbox-swipe.ts
 #: apps/web/src/pages/shell/chat/bot-context-menu.tsx
 msgid "Next week"
@@ -7897,6 +7955,7 @@ msgstr "플러그인 카탈로그에 없음"
 
 #: apps/mobile/components/cards/McpApprovalCard.tsx
 #: apps/mobile/lib/auth/passkey.ts
+#: apps/mobile/lib/billing/self-hosted-support.ts
 #: apps/mobile/lib/composer/composer-dictation.ts
 #: apps/mobile/lib/settings/ai-consent.ts
 #: apps/mobile/lib/thread/thread-voice.ts
@@ -8048,6 +8107,10 @@ msgstr "한 번"
 #: apps/web/src/components/billing/ModelCredits.tsx
 msgid "One-time purchase. Credits do not expire."
 msgstr "일회성 구매. 크레딧은 만료되지 않습니다."
+
+#: apps/web/src/pages/routines/routine-editor/access-note.tsx
+msgid "Only {name} can change this routine."
+msgstr ""
 
 #: apps/web/src/components/messages/SecretAskCard.tsx
 msgid "Only enter a code {codeHost} sent you."
@@ -8291,6 +8354,7 @@ msgstr "전용 컴퓨터"
 
 #: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/page-share.tsx
+#: apps/mobile/app/routine.tsx
 #: apps/mobile/app/space-members.tsx
 #: apps/mobile/lib/bots/identity-display.ts
 #: apps/web/src/components/pages/SharePopover.tsx
@@ -8449,6 +8513,10 @@ msgstr "API 키를 붙여넣으세요"
 msgid "Pause"
 msgstr "일시 정지"
 
+#: apps/mobile/components/media/audio-attachment.tsx
+msgid "Pause {name}"
+msgstr ""
+
 #: apps/mobile/lib/cards/import-setup.ts
 #: apps/mobile/lib/routines/routine.ts
 #: apps/web/src/pages/routines/RoutineList.tsx
@@ -8555,6 +8623,7 @@ msgstr "요금제"
 msgid "Play"
 msgstr "재생"
 
+#: apps/mobile/components/media/audio-attachment.tsx
 #: apps/web/src/components/messages/ArtifactFileCard.tsx
 msgid "Play {name}"
 msgstr "{name} 재생"
@@ -8644,6 +8713,10 @@ msgstr "이전 설정 섹션"
 #: apps/web/src/pages/space/Board.tsx
 msgid "Priority"
 msgstr "우선순위"
+
+#: apps/mobile/lib/billing/self-hosted-support.ts
+msgid "Priority support for $100 / month"
+msgstr ""
 
 #: apps/mobile/app/paywall.tsx
 msgid "Privacy"
@@ -8762,9 +8835,17 @@ msgstr "Rakazo"
 msgid "Rakazo credits"
 msgstr "Rakazo 크레딧"
 
+#: apps/mobile/lib/billing/self-hosted-support.ts
+msgid "Rakazo is free to self-host. If you'd like to support it, subscribers can email support@rakazo.com for help."
+msgstr ""
+
 #: apps/web/src/components/models/ProviderSettingsForm.tsx
 msgid "rakazo-shared and IDs starting with bot- are reserved for Rakazo."
 msgstr "rakazo-shared와 bot-으로 시작하는 ID는 Rakazo용으로 예약되어 있습니다."
+
+#: apps/mobile/app/(settings)/account.tsx
+msgid "Rate Rakazo"
+msgstr ""
 
 #: apps/mobile/components/thread/message-row.tsx
 #: apps/web/src/pages/shell/chat/message-hover-actions.tsx
@@ -8775,10 +8856,18 @@ msgstr "반응하기"
 msgid "Reactions"
 msgstr "반응"
 
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "Read calendar events?"
+msgstr ""
+
 #: apps/mobile/components/cards/ask-receipt.tsx
 #: apps/web/src/components/messages/AskCard.tsx
 msgid "Read from the page, not checked"
 msgstr "페이지에서 읽음, 확인 안 됨"
+
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "Read reminders?"
+msgstr ""
 
 #: apps/mobile/app/bot-settings.tsx
 #: apps/web/src/pages/shell/bots/bot-panel.tsx
@@ -9185,6 +9274,16 @@ msgstr "다시 열기"
 #: packages/i18n/src/vault.ts
 msgid "Repeated in the file"
 msgstr "파일 내 중복"
+
+#. placeholder {0}: recurrence.interval
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "Repeats every {0} day(s)"
+msgstr ""
+
+#. placeholder {0}: recurrence.interval
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "Repeats every {0} week(s)"
+msgstr ""
 
 #: apps/mobile/app/(settings)/model-connection.tsx
 #: apps/mobile/components/models/model-providers.tsx
@@ -9876,6 +9975,10 @@ msgstr "{name} 섹션 작업"
 msgid "Section name"
 msgstr "섹션 이름"
 
+#: apps/web/src/pages/shell/app-rail.tsx
+msgid "Sections"
+msgstr ""
+
 #: apps/web/src/pages/settings/AccountSettingsOverlay.tsx
 msgid "Security"
 msgstr "보안"
@@ -10196,10 +10299,13 @@ msgstr "선택 항목 표시"
 msgid "Show tool activity"
 msgstr "도구 활동 표시"
 
-#: apps/mobile/components/calls/VoiceChatCard.tsx
 #: apps/web/src/components/call/VoiceChatCard.tsx
 msgid "Show transcript"
 msgstr "대화 기록 표시"
+
+#: apps/mobile/components/calls/VoiceChatCard.tsx
+msgid "Show transcript: {title}, {duration}"
+msgstr ""
 
 #: apps/web/src/pages/settings/AccountSettingsOverlay.tsx
 msgid "Sidebar density"
@@ -10789,6 +10895,15 @@ msgstr "요약 및 사실"
 msgid "Sunday"
 msgstr "일요일"
 
+#: apps/mobile/lib/billing/self-hosted-support.ts
+msgid "Support for $25 / month"
+msgstr ""
+
+#: apps/mobile/app/(settings)/account.tsx
+#: apps/mobile/lib/billing/self-hosted-support.ts
+msgid "Support Rakazo"
+msgstr ""
+
 #: apps/mobile/app/(settings)/model-settings.tsx
 #: apps/web/src/pages/model-settings/model-settings-panel.tsx
 msgid "Supports images"
@@ -10808,17 +10923,13 @@ msgstr "사고 모드 지원"
 msgid "Switch"
 msgstr "전환"
 
-#: apps/mobile/components/settings/space-bots-model.tsx
-msgid "Switch {count} bots to the space default?"
-msgstr "봇 {count}개를 스페이스 기본값으로 전환할까요?"
-
-#: apps/mobile/components/settings/space-bots-model.tsx
-msgid "Switch 1 bot to the space default?"
-msgstr "봇 1개를 스페이스 기본값으로 전환할까요?"
-
 #: apps/mobile/lib/thread/send/unsent-send-warning.ts
 msgid "Switch anyway"
 msgstr "그래도 전환"
+
+#: apps/web/src/pages/shell/keyboard-shortcuts-dialog.tsx
+msgid "Switch model"
+msgstr ""
 
 #: apps/mobile/app/(settings)/billing.tsx
 msgid "Switch to {name}?"

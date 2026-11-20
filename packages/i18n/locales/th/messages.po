@@ -136,6 +136,11 @@ msgstr "เหลือ {0}"
 msgid "{0} MB"
 msgstr "{0} MB"
 
+#. placeholder {0}: recurrence.count
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "{0} occurrences"
+msgstr ""
+
 #. placeholder {0}: sender.name
 #: apps/web/src/pages/settings/ExternalConversationSettings.tsx
 msgid "{0} rollup hours"
@@ -247,6 +252,14 @@ msgstr "{commandVariable} เป็นชื่อสงวนไว้ ใช�
 msgid "{connectedCount, plural, one {# connected} other {# connected}}"
 msgstr "{connectedCount, plural, other {เชื่อมต่อแล้ว # รายการ}}"
 
+#: apps/web/src/pages/model-settings/space-bots-model.tsx
+msgid "{count, plural, one {{names} keeps its own model} other {{names} keep their own model}}"
+msgstr ""
+
+#: apps/mobile/components/settings/space-bots-model.tsx
+msgid "{count, plural, one {# bot has its own model: {names}} other {# bots have their own model: {names}}}"
+msgstr ""
+
 #: apps/mobile/components/thread/peer-receipt-line.tsx
 #: apps/web/src/pages/shell/chat/message-view.tsx
 msgid "{count, plural, one {# message with {peer}} other {# messages with {peer}}}"
@@ -260,17 +273,17 @@ msgstr "{count, plural, other {# แถว}}"
 msgid "{count, plural, one {# selected} other {# selected}}"
 msgstr "{count, plural, one {เลือกแล้ว # รายการ} other {เลือกแล้ว # รายการ}}"
 
+#: apps/mobile/app/(settings)/skills.tsx
+msgid "{count, plural, one {# skill} other {# skills}}"
+msgstr ""
+
+#: apps/mobile/components/settings/space-bots-model.tsx
+msgid "{count, plural, one {Switch # bot to the space default?} other {Switch # bots to the space default?}}"
+msgstr ""
+
 #: apps/mobile/components/thread/thread-list-controls.tsx
 msgid "{count} agents working"
 msgstr "เอเจนต์กำลังทำงาน {count} ตัว"
-
-#: apps/mobile/components/settings/space-bots-model.tsx
-msgid "{count} bots have their own model:"
-msgstr "บอท {count} ตัวมีโมเดลของตัวเอง:"
-
-#: apps/mobile/components/settings/space-bots-model.tsx
-msgid "{count} bots now use the space default."
-msgstr "บอท {count} ตัวใช้ค่าเริ่มต้นของสเปซแล้ว"
 
 #: apps/mobile/app/(settings)/integrations.tsx
 msgid "{count} connectors"
@@ -306,10 +319,6 @@ msgstr "{count} รายการที่ต้องดูแล"
 #: apps/mobile/app/bot-profile.tsx
 msgid "{count} on"
 msgstr "เปิดอยู่ {count} ตัว"
-
-#: apps/mobile/app/(settings)/skills.tsx
-msgid "{count} skills"
-msgstr "{count} สกิล"
 
 #: apps/mobile/components/settings/space-availability.tsx
 msgid "{count} spaces"
@@ -393,6 +402,14 @@ msgstr "{hidden, plural, other {+# ขั้นตอนก่อนหน้า
 msgid "{hiddenSelectedCount, plural, one {# selected model is hidden by your search.} other {# selected models are hidden by your search.}}"
 msgstr "{hiddenSelectedCount, plural, other {โมเดลที่เลือกไว้ # ตัวถูกซ่อนจากการค้นหาของคุณ}}"
 
+#: packages/i18n/src/computer-usage.ts
+msgid "{hours} bot computer hours/month"
+msgstr ""
+
+#: packages/i18n/src/computer-usage.ts
+msgid "{hours} bot computer hours/month at Standard size · Up to {size}"
+msgstr ""
+
 #: apps/web/src/lib/locale/relative-time.ts
 msgid "{hours}h ago"
 msgstr "{hours} ชั่วโมงก่อน"
@@ -423,9 +440,18 @@ msgstr "{memoryGb} GB ของ RAM และเวลาคอมพิวเ�
 msgid "{minutes}m ago"
 msgstr "{minutes} นาทีก่อน"
 
+#: apps/mobile/components/settings/space-bots-model.tsx
+msgid "{moved, plural, one {# bot now uses the space default.} other {# bots now use the space default.}}"
+msgstr ""
+
 #: apps/mobile/lib/routines/cron.ts
 msgid "{n} {unit}"
 msgstr "{n} {unit}"
+
+#: apps/mobile/app/routine.tsx
+#: apps/web/src/pages/shell/use-routine-editor.ts
+msgid "{name} (copy)"
+msgstr ""
 
 #: apps/mobile/lib/thread/send/thread-attachments.ts
 msgid "{name} (could not read)"
@@ -509,14 +535,6 @@ msgstr "{name}, เปิด"
 #: apps/mobile/lib/computers/computer.ts
 msgid "{name}’s computer"
 msgstr "คอมพิวเตอร์ของ {name}"
-
-#: apps/web/src/pages/model-settings/space-bots-model.tsx
-msgid "{names} keep their own model"
-msgstr "{names} ใช้โมเดลของตัวเองต่อไป"
-
-#: apps/web/src/pages/model-settings/space-bots-model.tsx
-msgid "{names} keeps its own model"
-msgstr "{names} ใช้โมเดลของตัวเองต่อไป"
 
 #: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
 msgid "{owner}'s {peer} wants to connect to {agent}"
@@ -871,14 +889,6 @@ msgstr "**วันพฤหัสบดี**\n"
 msgid "/ month"
 msgstr "/ เดือน"
 
-#: apps/mobile/components/settings/space-bots-model.tsx
-msgid "1 bot has its own model:"
-msgstr "บอท 1 ตัวใช้โมเดลของตัวเอง:"
-
-#: apps/mobile/components/settings/space-bots-model.tsx
-msgid "1 bot now uses the space default."
-msgstr "บอท 1 ตัวเปลี่ยนมาใช้ค่าเริ่มต้นของสเปซแล้ว"
-
 #: apps/mobile/app/(settings)/integrations.tsx
 msgid "1 connector"
 msgstr "1 คอนเนกเตอร์"
@@ -892,10 +902,6 @@ msgstr "ได้รับ 1 เดือนฟรี"
 #: apps/web/src/pages/shell/chat/bot-context-menu.tsx
 msgid "1 hour"
 msgstr "1 ชั่วโมง"
-
-#: apps/mobile/app/(settings)/skills.tsx
-msgid "1 skill"
-msgstr "1 สกิล"
 
 #: apps/web/src/components/integrations/space-availability.tsx
 msgid "1 space"
@@ -1072,6 +1078,7 @@ msgstr "บันทึกกิจกรรม"
 #: apps/mobile/app/(settings)/integrations.tsx
 #: apps/mobile/app/(settings)/plugin.tsx
 #: apps/mobile/components/thread/ask-block.tsx
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
 #: apps/web/src/components/integrations/plugin-marketplace.tsx
 #: apps/web/src/components/messages/SecretAskCard.tsx
 #: apps/web/src/pages/integrations/McpServerForm.tsx
@@ -1086,7 +1093,12 @@ msgstr "เพิ่ม"
 msgid "Add {0} to the group"
 msgstr "เพิ่ม {0} ในกลุ่ม"
 
+#: apps/web/src/pages/plugins/parts.tsx
+msgid "Add {label}"
+msgstr ""
+
 #: apps/mobile/app/(settings)/integrations.tsx
+#: apps/web/src/components/integrations/plugin-marketplace.tsx
 msgid "Add {name}"
 msgstr "เพิ่ม {name}"
 
@@ -1161,6 +1173,10 @@ msgstr "เพิ่มอีก"
 msgid "Add another {name}"
 msgstr "เพิ่ม {name} อีก"
 
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "Add calendar event?"
+msgstr ""
+
 #: apps/mobile/app/(settings)/billing.tsx
 #: apps/web/src/components/billing/ModelCredits.tsx
 msgid "Add credits"
@@ -1227,6 +1243,10 @@ msgstr "เพิ่ม passkey"
 #: apps/web/src/pages/model-settings/providers-section.tsx
 msgid "Add provider"
 msgstr "เพิ่มผู้ให้บริการ"
+
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "Add reminder?"
+msgstr ""
 
 #: apps/mobile/app/(settings)/_layout.tsx
 #: apps/mobile/app/(settings)/approvals.tsx
@@ -1371,6 +1391,10 @@ msgstr "{price} ทั้งหมดใช้สำหรับการใช�
 msgid "All bots"
 msgstr "บอททั้งหมด"
 
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "All day"
+msgstr ""
+
 #: apps/mobile/app/artifacts.tsx
 #: apps/web/src/pages/space/Artifacts.tsx
 msgid "All files"
@@ -1400,6 +1424,7 @@ msgid "Allow"
 msgstr "อนุญาต"
 
 #: apps/mobile/app/(settings)/messaging.tsx
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
 #: apps/mobile/lib/settings/ai-consent.ts
 #: apps/web/src/components/call/VoiceConsentDialog.tsx
 #: apps/web/src/components/settings/ApprovalRulesSettings.tsx
@@ -1997,6 +2022,7 @@ msgstr "ถูกบล็อก"
 #: apps/mobile/app/(settings)/account.tsx
 #: apps/mobile/app/(settings)/labs.tsx
 #: apps/web/src/pages/settings/LabsSettingsPanel.tsx
+#: apps/web/src/pages/shell/app-rail.tsx
 #: apps/web/src/pages/shell/sidebar/sidebar-footer.tsx
 #: apps/web/src/pages/space/Board.tsx
 msgid "Board"
@@ -2032,6 +2058,7 @@ msgstr "บอท"
 #: apps/web/src/pages/Shell.tsx
 #: apps/web/src/pages/shell/bots/avatar-studio-popover.tsx
 #: apps/web/src/pages/shell/chat/message-view.tsx
+#: apps/web/src/pages/shell/chat/transcript.tsx
 #: apps/web/src/pages/space/SpaceSearch.tsx
 msgid "Bot"
 msgstr "บอท"
@@ -2281,6 +2308,7 @@ msgstr "อ่านรูปภาพไม่ได้"
 #: apps/mobile/lib/cards/ask-action-label.ts
 #: apps/mobile/lib/inbox/sections/confirm-delete-section.ts
 #: apps/mobile/lib/inbox/use-inbox-chat-actions.ts
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
 #: apps/mobile/lib/thread/send/unsent-send-warning.ts
 #: apps/mobile/lib/thread/thread-voice.ts
 #: apps/web/src/components/account/PasskeySettings.tsx
@@ -2463,6 +2491,7 @@ msgstr "การสมัครใช้งาน ChatGPT"
 
 #: apps/mobile/lib/bots/identity-display.ts
 #: apps/web/src/lib/bots/identity-display.ts
+#: apps/web/src/pages/shell/app-rail.tsx
 msgid "Chats"
 msgstr "แชท"
 
@@ -2828,9 +2857,14 @@ msgid "Compact"
 msgstr "กระชับ"
 
 #: apps/mobile/components/bots/bot-context-cards.tsx
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
 #: apps/web/src/pages/space/ScratchpadSection.tsx
 msgid "Complete"
 msgstr "เสร็จสิ้น"
+
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "Complete reminder?"
+msgstr ""
 
 #: apps/mobile/components/thread/special-message-card.tsx
 #: apps/web/src/components/messages/SubagentCard.tsx
@@ -5633,6 +5667,10 @@ msgid "Extra high"
 msgstr "สูงมาก"
 
 #: packages/i18n/src/computer-usage.ts
+msgid "Extra large"
+msgstr ""
+
+#: packages/i18n/src/computer-usage.ts
 msgid "Extra large (uses {rate}× hours)"
 msgstr "ใหญ่พิเศษ (ใช้ชั่วโมง {rate}×)"
 
@@ -6074,10 +6112,13 @@ msgstr "ซ่อนคีย์บอร์ด"
 msgid "Hide password"
 msgstr "ซ่อนรหัสผ่าน"
 
-#: apps/mobile/components/calls/VoiceChatCard.tsx
 #: apps/web/src/components/call/VoiceChatCard.tsx
 msgid "Hide transcript"
 msgstr "ซ่อนการถอดเสียง"
+
+#: apps/mobile/components/calls/VoiceChatCard.tsx
+msgid "Hide transcript: {title}, {duration}"
+msgstr ""
 
 #: apps/mobile/lib/models/thinking-level.ts
 #: apps/web/src/components/models/ProviderSettingsForm.tsx
@@ -6560,6 +6601,10 @@ msgid "Language"
 msgstr "ภาษา"
 
 #: packages/i18n/src/computer-usage.ts
+msgid "Large"
+msgstr ""
+
+#: packages/i18n/src/computer-usage.ts
 msgid "Large (uses {rate}× hours)"
 msgstr "ใหญ่ (ใช้ชั่วโมง {rate}×)"
 
@@ -6571,15 +6616,13 @@ msgstr "การวางข้อความยาว"
 msgid "Large text pasted inline"
 msgstr "ข้อความยาวถูกวางในเนื้อหาแล้ว"
 
-#. placeholder {0}: new Date(state.checkedAt).toLocaleString()
 #: apps/web/src/pages/routines/routine-editor/trigger-cards.tsx
-msgid "Last check {0}: changed"
-msgstr "ตรวจล่าสุด {0}: มีการเปลี่ยนแปลง"
+msgid "Last check {checkedAt}: changed"
+msgstr ""
 
-#. placeholder {0}: new Date(state.checkedAt).toLocaleString()
 #: apps/web/src/pages/routines/routine-editor/trigger-cards.tsx
-msgid "Last check {0}: no changes"
-msgstr "ตรวจล่าสุด {0}: ไม่มีการเปลี่ยนแปลง"
+msgid "Last check {checkedAt}: no changes"
+msgstr ""
 
 #: apps/web/src/components/account/SocialSignInButtons.tsx
 msgid "Last used"
@@ -6867,6 +6910,11 @@ msgstr "สร้างโดยบอท"
 msgid "Main model"
 msgstr "โมเดลหลัก"
 
+#: apps/mobile/app/routine.tsx
+#: apps/web/src/pages/routines/RoutineEditor.tsx
+msgid "Make a copy"
+msgstr ""
+
 #: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/web/src/components/spaces/OrganizationMembersSettings.tsx
 msgid "Make admin"
@@ -7143,6 +7191,11 @@ msgstr "ข้อความ…"
 msgid "Messaged {peer}"
 msgstr "ส่งข้อความถึง {peer} แล้ว"
 
+#: apps/mobile/lib/thread/send/thread-send.ts
+#: apps/web/src/pages/shell/composer/use-composer-actions.ts
+msgid "Messages can be up to {limit} characters."
+msgstr ""
+
 #: apps/mobile/lib/settings/ai-consent.ts
 msgid "Messages, chat history, bot instructions, memories, attachments, screenshots and connected-app content are sent to run your bots, including routines."
 msgstr "ข้อความ, ประวัติแชท, คำสั่งของบอท, ความจำ, ไฟล์แนบ, สกรีนช็อต และเนื้อหาจากแอปที่เชื่อมต่อ จะถูกส่งเพื่อรันบอท รวมถึงรูทีนด้วย"
@@ -7216,6 +7269,7 @@ msgstr "โหมด"
 #: apps/web/src/pages/settings/UsageSettingsPanel.tsx
 #: apps/web/src/pages/shell/bots/agent-import-plan.tsx
 #: apps/web/src/pages/shell/chat/chat-model-picker.tsx
+#: apps/web/src/pages/shell/composer/composer-model-picker.tsx
 msgid "Model"
 msgstr "โมเดล"
 
@@ -7617,6 +7671,10 @@ msgstr "การรันถัดไป"
 msgid "Next settings sections"
 msgstr "ส่วนการตั้งค่าถัดไป"
 
+#: apps/web/src/pages/shell/keyboard-shortcuts-dialog.tsx
+msgid "Next thinking level"
+msgstr ""
+
 #: apps/mobile/lib/inbox/inbox-swipe.ts
 #: apps/web/src/pages/shell/chat/bot-context-menu.tsx
 msgid "Next week"
@@ -7891,6 +7949,7 @@ msgstr "ไม่อยู่ในแคตตาล็อกปลั๊กอ
 
 #: apps/mobile/components/cards/McpApprovalCard.tsx
 #: apps/mobile/lib/auth/passkey.ts
+#: apps/mobile/lib/billing/self-hosted-support.ts
 #: apps/mobile/lib/composer/composer-dictation.ts
 #: apps/mobile/lib/settings/ai-consent.ts
 #: apps/mobile/lib/thread/thread-voice.ts
@@ -8042,6 +8101,10 @@ msgstr "ครั้งเดียว"
 #: apps/web/src/components/billing/ModelCredits.tsx
 msgid "One-time purchase. Credits do not expire."
 msgstr "ซื้อครั้งเดียว เครดิตไม่หมดอายุ"
+
+#: apps/web/src/pages/routines/routine-editor/access-note.tsx
+msgid "Only {name} can change this routine."
+msgstr ""
 
 #: apps/web/src/components/messages/SecretAskCard.tsx
 msgid "Only enter a code {codeHost} sent you."
@@ -8285,6 +8348,7 @@ msgstr "คอมพิวเตอร์ของตัวเอง"
 
 #: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/page-share.tsx
+#: apps/mobile/app/routine.tsx
 #: apps/mobile/app/space-members.tsx
 #: apps/mobile/lib/bots/identity-display.ts
 #: apps/web/src/components/pages/SharePopover.tsx
@@ -8443,6 +8507,10 @@ msgstr "วาง API key"
 msgid "Pause"
 msgstr "หยุดชั่วคราว"
 
+#: apps/mobile/components/media/audio-attachment.tsx
+msgid "Pause {name}"
+msgstr ""
+
 #: apps/mobile/lib/cards/import-setup.ts
 #: apps/mobile/lib/routines/routine.ts
 #: apps/web/src/pages/routines/RoutineList.tsx
@@ -8549,6 +8617,7 @@ msgstr "แผน"
 msgid "Play"
 msgstr "เล่น"
 
+#: apps/mobile/components/media/audio-attachment.tsx
 #: apps/web/src/components/messages/ArtifactFileCard.tsx
 msgid "Play {name}"
 msgstr "เล่น {name}"
@@ -8638,6 +8707,10 @@ msgstr "ส่วนการตั้งค่าก่อนหน้า"
 #: apps/web/src/pages/space/Board.tsx
 msgid "Priority"
 msgstr "ลำดับความสำคัญ"
+
+#: apps/mobile/lib/billing/self-hosted-support.ts
+msgid "Priority support for $100 / month"
+msgstr ""
 
 #: apps/mobile/app/paywall.tsx
 msgid "Privacy"
@@ -8756,9 +8829,17 @@ msgstr "Rakazo"
 msgid "Rakazo credits"
 msgstr "เครดิต Rakazo"
 
+#: apps/mobile/lib/billing/self-hosted-support.ts
+msgid "Rakazo is free to self-host. If you'd like to support it, subscribers can email support@rakazo.com for help."
+msgstr ""
+
 #: apps/web/src/components/models/ProviderSettingsForm.tsx
 msgid "rakazo-shared and IDs starting with bot- are reserved for Rakazo."
 msgstr "rakazo-shared และ ID ที่ขึ้นต้นด้วย bot- สงวนไว้สำหรับ Rakazo"
+
+#: apps/mobile/app/(settings)/account.tsx
+msgid "Rate Rakazo"
+msgstr ""
 
 #: apps/mobile/components/thread/message-row.tsx
 #: apps/web/src/pages/shell/chat/message-hover-actions.tsx
@@ -8769,10 +8850,18 @@ msgstr "แสดงปฏิกิริยา"
 msgid "Reactions"
 msgstr "ปฏิกิริยา"
 
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "Read calendar events?"
+msgstr ""
+
 #: apps/mobile/components/cards/ask-receipt.tsx
 #: apps/web/src/components/messages/AskCard.tsx
 msgid "Read from the page, not checked"
 msgstr "อ่านจากหน้าเว็บ, ยังไม่ได้ตรวจสอบ"
+
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "Read reminders?"
+msgstr ""
 
 #: apps/mobile/app/bot-settings.tsx
 #: apps/web/src/pages/shell/bots/bot-panel.tsx
@@ -9179,6 +9268,16 @@ msgstr "เปิดอีกครั้ง"
 #: packages/i18n/src/vault.ts
 msgid "Repeated in the file"
 msgstr "ซ้ำในไฟล์"
+
+#. placeholder {0}: recurrence.interval
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "Repeats every {0} day(s)"
+msgstr ""
+
+#. placeholder {0}: recurrence.interval
+#: apps/mobile/lib/personal-calendar/device-calendar.ts
+msgid "Repeats every {0} week(s)"
+msgstr ""
 
 #: apps/mobile/app/(settings)/model-connection.tsx
 #: apps/mobile/components/models/model-providers.tsx
@@ -9870,6 +9969,10 @@ msgstr "การทำงานของส่วน {name}"
 msgid "Section name"
 msgstr "ชื่อส่วน"
 
+#: apps/web/src/pages/shell/app-rail.tsx
+msgid "Sections"
+msgstr ""
+
 #: apps/web/src/pages/settings/AccountSettingsOverlay.tsx
 msgid "Security"
 msgstr "ความปลอดภัย"
@@ -10190,10 +10293,13 @@ msgstr "แสดงที่เลือก"
 msgid "Show tool activity"
 msgstr "แสดงกิจกรรมของเครื่องมือ"
 
-#: apps/mobile/components/calls/VoiceChatCard.tsx
 #: apps/web/src/components/call/VoiceChatCard.tsx
 msgid "Show transcript"
 msgstr "แสดงข้อความถอดเสียง"
+
+#: apps/mobile/components/calls/VoiceChatCard.tsx
+msgid "Show transcript: {title}, {duration}"
+msgstr ""
 
 #: apps/web/src/pages/settings/AccountSettingsOverlay.tsx
 msgid "Sidebar density"
@@ -10783,6 +10889,15 @@ msgstr "บทสรุปและข้อเท็จจริง"
 msgid "Sunday"
 msgstr "วันอาทิตย์"
 
+#: apps/mobile/lib/billing/self-hosted-support.ts
+msgid "Support for $25 / month"
+msgstr ""
+
+#: apps/mobile/app/(settings)/account.tsx
+#: apps/mobile/lib/billing/self-hosted-support.ts
+msgid "Support Rakazo"
+msgstr ""
+
 #: apps/mobile/app/(settings)/model-settings.tsx
 #: apps/web/src/pages/model-settings/model-settings-panel.tsx
 msgid "Supports images"
@@ -10802,17 +10917,13 @@ msgstr "รองรับการคิด"
 msgid "Switch"
 msgstr "สลับ"
 
-#: apps/mobile/components/settings/space-bots-model.tsx
-msgid "Switch {count} bots to the space default?"
-msgstr "สลับบอท {count} ตัวเป็นค่าเริ่มต้นของสเปซไหม"
-
-#: apps/mobile/components/settings/space-bots-model.tsx
-msgid "Switch 1 bot to the space default?"
-msgstr "สลับบอท 1 ตัวเป็นค่าเริ่มต้นของสเปซไหม"
-
 #: apps/mobile/lib/thread/send/unsent-send-warning.ts
 msgid "Switch anyway"
 msgstr "สลับเลย"
+
+#: apps/web/src/pages/shell/keyboard-shortcuts-dialog.tsx
+msgid "Switch model"
+msgstr ""
 
 #: apps/mobile/app/(settings)/billing.tsx
 msgid "Switch to {name}?"
